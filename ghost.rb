@@ -8,7 +8,7 @@ class Game
     @live_players = players
     @current_player_idx = 0
     @current_player = @players[@current_player_idx]
-    @dictionary = Set.new(File.readlines("test-dict.txt").map { |word| word.chomp } )
+    @dictionary = Set.new(File.readlines("ghost-dictionary.txt").map { |word| word.chomp } )
     @fragment = ""
     @losses = Hash.new(0)
   end
